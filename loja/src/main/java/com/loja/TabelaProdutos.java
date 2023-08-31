@@ -17,6 +17,14 @@ public class TabelaProdutos {
         this.produtos.add(caneta);
         this.produtos.add(borracha);
         this.produtos.add(lápis);
-        
     }
+        public List<Produto> getProdutos(){
+            return produtos;
+
+    }
+public List <Produto> buscarTodosOsProdutos(){
+        return this.getProdutos();
+
 }
+}
+
