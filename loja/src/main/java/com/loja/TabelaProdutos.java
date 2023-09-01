@@ -65,9 +65,20 @@ public Produto buscarProdutoPeloId(int produtoId){
             produtoProcurado.setNome(produtoAtualizar.getNome());
             produtoProcurado.setDescricao(produtoAtualizar.getDescricao());
             produtoProcurado.setValorUnitario(produtoAtualizar.getValorUnitario());
-
         }
 
+
+    }
+
+    /**
+     * Método que remove um produto da lista
+     * Utiliza como base o próprio objeto para remover
+     *
+     * @param produtoRemover
+     */
+
+    public void removerProduto(int produtoId) {
+        this.produtos.remove(produtoId);
     }
 
 
